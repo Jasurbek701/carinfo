@@ -1,0 +1,116 @@
+
+{% load static %}
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hyundai</title>
+    <link rel="stylesheet" href="../../static/hyundaicss.css">
+</head>
+<body>
+<div class="bg"></div>
+<div class="container">
+    <div class="row">
+        <div class="nav">
+            <img class="uzcar" src="../../media/images/Uzcarnewws1.jpg" alt="FOTO">
+
+            <ul class="ulnav">
+                <li>
+                    <a class="class" href="{% url 'index' %}">Home</a>
+                </li>
+                <li>
+                    <a class="class" href="{% url 'news' %}">News</a>
+                </li>
+                <li>
+                    <a class="class" href="{% url 'images' %}">Images</a>
+                </li>
+                <li>
+                    <a class="class" href="{% url 'contact' %}">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+<img class="hlogo" src="{% static '../../../../media/images/hyundai-logo2.png' %}" alt="logo">
+
+<!-------------------------------modelline------------------------>
+<div class="modeline">
+     Model line Hyundai
+</div>
+<div class="block">
+    <div class="box1">
+        <a class="box11" href="https://www.hyundai.com/uz/ru/find-a-car/elantra-2020/highlights" target="_blank">
+            
+            <p class="name">ELANTRA</p>
+            <p class="price">from 300 000 000 sum</p>
+            <br>
+            <img src="{% static '../../../../media/images/elantra2022.3.png' %}" alt="" class="foto">
+        </a>
+    </div>
+    <div class="box1">
+        <a class="box11" href="https://www.hyundai.com/uz/ru/find-a-car/sonata-2019/highlights" target="_blank">
+            <p class="name">SONATA</p>
+            <p class="price">from 376 000 000 sum</p>
+            &nbsp;
+            <img src="{% static '../../../../media/images/sonata2022.png' %}" alt="" class="foto">
+        </a>
+    </div>
+    <div class="box1">
+        <a class="box11" href="https://www.hyundai.com/uz/ru/find-a-car/creta-2021/highlights" target="_blank">
+            <p class="name">CRETA</p>
+            <p class="price">from 296 000 000 sum</p>
+            <img src="{% static '../../../../media/images/creta2022.1.png' %}" alt="" class="foto">
+        </a>
+    </div>
+    <div class="box1">
+        <a class="box11" href="https://www.hyundai.com/uz/ru/find-a-car/tucson-2021/highlights" target="_blank">
+            <p class="name">TUCSON</p>
+            <p class="price">from 407 000 000 sum</p>
+            <br>
+            <img src="{% static '../../../../media/images/tucson2022.2.png' %}" alt="" class="foto">
+        </a>
+    </div>
+    <div class="box1">
+        <a class="box11" href="https://www.hyundai.com/uz/ru/find-a-car/santa-fe-2021/highlights" target="_blank">
+            <p class="name"> SANTA FE</p>
+            <p class="price">from 462 000 000 sum</p>
+            &nbsp;
+            
+            
+            <br>
+            &nbsp;
+            <img src="{% static '../../../../media/images/santafe2022.png' %} " alt="" class="foto">
+        </a>
+    </div>
+    <div class="box1">
+        <a class="box11" href="https://www.hyundai.com/uz/ru/find-a-car/palisade-2020/highlights" target="_blank">
+            <p class="name">PALISADE</p>
+            <p class="price">from 775 000 000 sum</p>
+            <br>
+            <img src="{% static '../../media/images/palisade.png' %}" alt="" class="foto">
+            &nbsp;
+        </a>
+    </div>
+</div>
+<!--------------------------------finish-------------------------->
+
+<div class="finish">
+    <div class="dev">
+        <p class="develop">Developer: <span>Jasurbek Usmonaliyev</span></p>
+        <p class="email">jasurbek.u.u@mail.ru</p>
+        <div class="ahref">
+            <a href="#">Instagram</a> <br>
+            <a href="#">Telegram</a> <br>
+            <a href="#">You tube</a> <br>
+        </div>
+
+    </div>
+</div>
+</body>
+
+</html>
+

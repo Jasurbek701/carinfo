@@ -1,0 +1,104 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>project by me | 1</title>
+    <link rel="stylesheet" href="{% static 'css.css' %}">
+
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+        <div class="nav">
+            <img src="../../media/images/Uzcarnewws.jpg" alt="FOTO">
+            
+            <ul class="ulnav">
+            <li>
+                <a class="class" href="{% url 'news' %}">News</a>
+            </li>
+            <li>
+                <a class="class" href="{% url 'images' %}">Images</a>
+            </li>
+            <li>
+                <a class="class" href="{% url 'contact' %}">Contacts</a>
+            </li>
+        </ul>
+       
+        <span style="font-size: 18px; 
+                     color: #fff;
+                     margin-right:1070px;
+                     margin-left: 10px;">Hello, {{request.user}}
+        </span>
+        
+        <span style="color: #fff;
+                    font-size: 15px;
+                    
+                    text-decoration: none;">
+             <a style="font-size: 18px;
+                    color: rgba(209, 209, 209, 0.89);
+                    text-decoration: none;" href="{% url 'logout' %}">Log out</a> 
+        
+        </span>
+
+    </div>
+
+     </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="block">
+<div class="box" style="background-image: url(../../media/images/2021_kvadrat_kia_k5_gt_line_5k_2-HD.jpg);">
+    
+     <a class="kia" href="{% url 'kia' %}">KIA</a>
+     
+</div>
+    <div class="box2" style="background-image: url(../../media/images/2021+tucson.jpg);">
+        <a class="hyundai" href="{% url 'hyundai' %}">Hyundai</a>
+    </div>
+    <div class="box3" style="background-image: url(../../media/images/20212+tahoe.jpg);">
+        <a class="chevy" href="{% url 'chevrolet' %}">Chevrolet</a>
+    </div>
+    <!-- <div class="box4" style="background-image: url(../../media/images/2021+lada.jpg);">
+        <a class="lada" href="">LADA</a>
+    </div>
+    <div class="box5" style="background-image: url(../../media/images/2021+octavia.jpg);">
+        <a class="skoda" href="">Skoda</a>
+    </div>
+    <div class="box6"  style="background-image: url(../../media/images/20212+caddy.jpg);">
+        <a class="volkswagen" href=" ">Volkswagen
+        </a>
+    </div> -->
+</div>
+
+
+
+
+
+
+<div class="finish">
+    <div class="dev">
+        <p class="develop">Developer: <span>Jasurbek Usmonaliyev</span></p>
+       <p class="email">jasurbek.u.u@mail.ru</p>
+       <div class="ahref">
+           <a href="#">Instagram</a> <br>
+           <a href="#">Telegram</a> <br>
+           <a href="#">You tube</a> <br>
+       </div>
+
+    </div>
+</div>
+
+
+</body>
+
+</html>

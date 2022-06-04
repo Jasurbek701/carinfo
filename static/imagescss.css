@@ -1,0 +1,65 @@
+body {
+    background-color: white; }
+
+.container .row .nav {
+    font-size: 20px;
+    margin: 5px;
+    font-family: Calibri;
+    flex-wrap: wrap;
+    display: flex;
+    background-color: brown;
+    border-radius: 10px; }
+.container .row .nav img {
+    width: 100px;
+    height: 100px;
+    border: 1px solid white;
+    border-radius: 50%;
+    margin: 5px 20px; }
+.container .row .ulnav {
+    flex-wrap: wrap;
+    display: flex;
+    list-style: none;
+    margin-top: -60px;
+    margin-left: 700px; }
+.container .row .ulnav li {
+    margin-left: 67px;
+    margin-top: -10px}
+.container .row .ulnav li .class {
+    color: white;
+
+    text-decoration: none;
+    font-family: Calibri;
+    font-size: larger;
+    transition-property: all; }
+
+
+
+
+
+
+.finish {
+    background-color: darkred;
+    height: 400px;
+    margin-top: 200px;
+    border-radius: 0 0 10px 10px; }
+.finish .dev .develop {
+    padding-top: 20px;
+    padding-left: 20px;
+    color: white;
+    font-family: Calibri;
+    font-size: 20px; }
+.finish .dev .develop span {
+    font-size: 25px; }
+.finish .dev .email {
+    padding: 20px;
+    color: white;
+    font-family: Calibri;
+    font-size: 15px; }
+.finish .ahref {
+    font-size: 20px;
+    font-family: "Comic Sans MS"; }
+.finish .ahref a {
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    padding: 20px; }

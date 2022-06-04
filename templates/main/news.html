@@ -1,0 +1,55 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>news</title>
+    <link rel="stylesheet" href="../../static/newscss.css">
+</head>
+<body>
+<div class="container">
+    <div class="row">
+        <div class="nav">
+            <img src="../../media/images/Uzcarnewws.jpg" alt="FOTO">
+            <ul class="ulnav">
+                <li>
+                    <a class="class" href="{% url 'index' %}">Home</a>
+                </li>
+                <li>
+                    <a class="class" href="{% url 'news' %}">News</a>
+                </li>
+                <li>
+                    <a class="class" href="{% url 'images' %}">Images</a>
+                </li>
+                <li>
+                    <a class="class" href="{% url 'contact' %}">Contacts</a>
+                </li>
+            </ul>
+        </div>
+
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<div class="finish">
+    <div class="dev">
+        <p class="develop">Developer: <span>Jasurbek Usmonaliyev</span></p>
+        <p class="email">jasurbek.u.u@mail.ru</p>
+        <div class="ahref">
+            <a href="#">Instagram</a> <br>
+            <a href="#">Telegram</a> <br>
+            <a href="#">You tube</a> <br>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

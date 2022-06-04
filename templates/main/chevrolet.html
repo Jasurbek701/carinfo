@@ -1,0 +1,346 @@
+
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>chevrolet</title>
+    <link rel="stylesheet" href="{% static '../../Pro1/Bootstrap/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static '../../static/chevroletcss.css' %}">
+
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+        <a class="navbar-brand" href="#">
+            <img src="../../media/images/Uzcarnewws.jpg" alt="" height="60px" class="img">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="{% url 'index' %}">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'news' %}">News</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'images' %}">Images</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'contact' %}">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-------------------------------------------carousel-------------------------------------------------------->
+<header>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner" role="listbox">
+            <!-- Slide One - Set the background image for this slide in the line below -->
+            <div class="carousel-item active" style="background-image: url(../../media/images/2021tahoewhitefull.webp)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4">Tahoe</h3>
+                    <p class="lead">All-New 2021 TAHOE: $ 87000</p>
+                </div>
+            </div>
+            <!-- Slide Two - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url(../../media/images/2021malibu.jpg)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4">Malibu</h3>
+                    <p class="lead">premier: $ 35000</p>
+                </div>
+            </div>
+            <!-- Slide Three - Set the background image for this slide in the line below -->
+            <div class="carousel-item" style="background-image: url(../../media/images/tracker.jpg)">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3 class="display-4">Tracker</h3>
+                    <p class="lead">All new TRACKER LT $ 23500</p>
+                </div>
+            </div>
+        </div>
+        <!-- <a class="carousel-control-prev" href="{% static '#carouselExampleIndicators' %}" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="{% static '#carouselExampleIndicators' %}" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a> -->
+    </div>
+</header>
+
+
+<div class="modeline" style="    font-size: 50px;
+                                color: black;
+                                font-family: Calibri;
+                                margin-top: 100px;
+                                margin-left: 520px;">
+            UzAutoMotors
+</div>
+
+
+<div class="block" style=" display: flex;
+                            flex-wrap: wrap;
+                            margin-top: 50px;
+                            margin-left: 70px;">
+
+
+   <div class="box1" style="    border: 0.5px solid #e3e3e3;
+                                width: 400px;
+                                height: 350px;">
+       <a class="box11" href="https://uzautomotors.com/cars/chevrolet_spark" target="_blank">
+           
+           <p class="name" style="    font-family: 'Berlin Sans FB';
+                                    font-size: 25px;
+                                    color: black;
+       
+                                    text-decoration:none;
+                                    list-style: none;
+                                    margin-left: 40px;
+                                    margin-top: 25px;" >SPARK</p>
+
+           <p class="price" style=" margin-left: 40px;
+                                    margin-top: -20px;
+                                    font-family: Calibri;
+                                    font-size: 16px;
+                                    color: black;" >from 104 095 000 sum</p>
+           <br>
+           <img style="width: 100%;
+           margin-top: 20px;" src="{% static '../../../../media/images/spark.png' %}" alt="" class="foto">
+       </a>
+   </div>
+
+
+   <div class="box1" style="    border: 0.5px solid #e3e3e3;
+   width: 400px;
+   height: 350px;">
+<a class="box11" href="https://uzautomotors.com/cars/chevrolet_nexia" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+       font-size: 25px;
+       color: black;
+
+       text-decoration:none;
+       list-style: none;
+       margin-left: 40px;
+       margin-top: 25px;" >NEXIA</p>
+
+<p class="price" style=" margin-left: 40px;
+       margin-top: -20px;
+       font-family: Calibri;
+       font-size: 16px;
+       color: black;" >from 119 921 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/nexia.png' %}" alt="" class="foto">
+</a>
+</div>
+
+
+
+<div class="box1" style="    border: 0.5px solid #e3e3e3;
+width: 400px;
+height: 350px;">
+<a class="box11" href="https://uzautomotors.com/cars/chevrolet_cobalt" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;" >COBALT</p>
+
+<p class="price" style=" margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;" >from 125 795 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/cobalt.png' %}" alt="" class="foto">
+</a>
+</div>
+
+
+
+<div class="box1" style="    border: 0.5px solid #e3e3e3;
+width: 400px;
+height: 350px;">
+<a class="box11" href="https://uzautomotors.com/cars/chevrolet_lacetti" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;" >LACETTI</p>
+
+<p class="price" style=" margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;" >from 128 284 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/lacetti.png' %}" alt="" class="foto">
+</a>
+</div>
+ 
+
+
+<div class="box1" style="    border: 0.5px solid #e3e3e3;
+width: 400px;
+height: 350px;">
+<a class="box11" href="https://uzautomotors.com/chevrolet-tracker-2021" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;" >Tracker</p>
+
+<p class="price" style=" margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;" >from 255 200 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/tracker2.png' %}" alt="" class="foto">
+</a>
+</div>
+
+
+
+<div class="box1" style="    border: 0.5px solid #e3e3e3;
+width: 400px;
+height: 350px;">
+<a class="box11" href="https://uzautomotors.com/cars/chevrolet-malibu" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;" >Malibu</p>
+
+<p class="price" style=" margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;" >405 900 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/malibu.png' %}" alt="" class="foto">
+</a>
+</div>
+
+
+
+<div class="box1" style="    border: 0.5px solid #e3e3e3;
+width: 400px;
+height: 350px;">
+<a class="box11" href="https://uzautomotors.com/cars/chevrolet_equinox" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;" >EQUINOX</p>
+
+<p class="price" style=" margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;" >from 389 000 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/equinox.png' %}" alt="" class="foto">
+</a>
+</div>
+
+
+<div class="box1" style="    border: 0.5px solid #e3e3e3;
+width: 400px;
+height: 350px;">
+<a class="box11" href="https://uzautomotors.com/cars/chevrolet_traverse" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;" >TRAVERSE</p>
+
+<p class="price" style=" margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;" >647 600 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/traverse.png' %}" alt="" class="foto">
+</a>
+</div>
+
+
+
+<div class="box1" style="    border: 0.5px solid #e3e3e3;
+width: 400px;
+height: 350px;">
+<a class="box11" href="https://uzautomotors.com/cars/chevrolet_tahoe" target="_blank">
+
+<p class="name" style="    font-family: 'Berlin Sans FB';
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;" >TAHOE</p>
+
+<p class="price" style=" margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;" >from 947 000 000 sum</p>
+<br>
+<img style="width: 100%;
+margin-top: 20px;" src="{% static '../../../../media/images/tahoe.png' %}" alt="" class="foto">
+</a>
+</div>
+
+
+</body>
+<script src="{% static '../../../../static/Bootstrap/js/jquery-slim.min.js' %}"></script>
+<script src="{% static '../../../../static/Bootstrap/js/src/popover.js' %}"></script>
+<script src="{% static '../../../../static/Bootstrap/js/bootstrap.js' %}"></script>
+</html>

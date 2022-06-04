@@ -1,0 +1,96 @@
+.img{
+    margin-left: -110px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    border-radius: 50%;
+    padding: -5px;
+}
+
+.carousel-item {
+    height: 65vh;
+    min-height: 350px;
+    background: no-repeat center center scroll;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+
+
+
+
+
+
+----------------------------------------------------------------------------------------------------------------
+
+
+.model{
+
+   font-family: "Rubik-Bold", "Rubik-Regular";
+    color: yellow;
+    
+
+}
+
+
+
+
+
+
+.modeline{
+    font-size: 50px;
+    color: black;
+    font-family: Calibri;
+    margin-top: 100px;
+    margin-left: 480px;
+}
+.block{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+    margin-left: 70px;
+
+}
+.box1{
+
+    border: 0.5px solid #e3e3e3;
+    width: 400px;
+    height: 350px;
+}
+.name{
+    font-family: "Berlin Sans FB";
+    font-size: 25px;
+    color: black;
+
+    text-decoration:none;
+    list-style: none;
+    margin-left: 40px;
+    margin-top: 25px;
+}
+.price{
+    margin-left: 40px;
+    margin-top: -20px;
+    font-family: Calibri;
+    font-size: 16px;
+    color: black;
+}
+
+.box1 img{
+    width: 100%;
+    margin-top: 20px;
+
+}
+.box11{
+    text-decoration:none;
+    list-style: none;
+}
+.box1:hover{
+    background-color: #002c5f;
+color: white;
+}
+.box1:hover p{
+    color: white;
+}
+
